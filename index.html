@@ -1,7 +1,20 @@
 <html>
 <head>
-	<title>Checkbox</title>
+	<title>Pretty Checkbox With Image</title>
 	<style>
+  /*
+    Just aligning in the center
+  */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /*
+    Checkbox styles:
+  */
   input[type=checkbox].pretty-image-checkbox {
     display:none;
   }
@@ -15,6 +28,7 @@
        border-radius: 128px;
        position: relative;
        transition: all .1s ease-in-out;
+       cursor: pointer;
    }
    input[type=checkbox].pretty-image-checkbox:checked + label
     {
@@ -76,13 +90,13 @@
 </head>
 
 <body>
-
-<p>
-   <input type='checkbox' name='thing' value='valuable' id="thing" class="pretty-image-checkbox"/>
-   <label for="thing">
+  <div>
+    <input type='checkbox' name='thing' value='valuable' id="thing" class="pretty-image-checkbox"/>
+    <label for="thing">
       <img class="pretty-checkbox-image" src="cmyk.png"/>
       <span class="pretty-checkbox-name">Design</span>
-   </label>
-
+    </label>
+  </div>
+    
 </body>
 </html>
