@@ -1,2 +1,4 @@
 # pretty-checkbox-image-css
-Checkbox image replacement with only css
+This is a CSS snippet to create a pretty checkbox with image as a option.
+
+![](pretty-checkbox.gif)
